@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+            <script type="text/javascript"> 
+
+today=new Date();
+var Holi=new Date(today.getFullYear(), 2, 20);
+if (today.getMonth()==2 && today.getDate()>20) 
+{
+    Holi.setFullYear(Holi.getFullYear()+1); 
+}  
+var one_day=1000*60*60*24;
+console.log(Math.ceil((Holi.getTime()-today.getTime())/(one_day))+
+" days left until holi!");
+            </script>
+            
+    </body>
+</html>
